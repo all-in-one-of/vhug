@@ -1,0 +1,191 @@
+# IFD created by Houdini Version: 17.0.459
+# Generation Time: Feb 12, 2019 at 21:04:21
+#   Render Target: mantra17.0
+#        HIP File: C:/Users/bareya/Desktop/VHUG/01_IFD_Example/IFDExample, $T=0, $FPS=24
+#   Output driver: /obj/ropnet1/mantra1
+ray_version VEX17.0.459
+ray_defaults 'RenderProperties.json'
+
+ray_declare global float global:fps 24
+fps 24; tcur 0
+
+setenv HIP = "$HIP_OVERRIDE"
+if "$HIP" == "" then	# {
+    setenv HIP = "C:/Users/bareya/Desktop/VHUG/01_IFD_Example"
+endif	# }
+if "$_TMP_SHARED_STORAGE" == "" then	# {
+    setenv _TMP_SHARED_STORAGE = "C:/Users/bareya/Desktop/VHUG/01_IFD_Example/ifds/storage"
+endif	# }
+if "$_TMP_LOCAL_STORAGE" == "" then	# {
+    setenv _TMP_LOCAL_STORAGE = "C:/Users/bareya/AppData/Local/Temp/houdini_temp/ifds/storage"
+endif	# }
+# Retained geometry
+# Save geometry for /obj/triangle/attribwrangle1 at time 0
+ray_start geo	# {
+    ray_detail /obj/triangle/attribwrangle1 stdin
+[
+	"fileversion","17.0.459",
+	"hasindex",false,
+	"pointcount",3,
+	"vertexcount",3,
+	"primitivecount",1,
+	"topology",[
+		"pointref",[
+			"indices",[0,1,2]
+		]
+	],
+	"attributes",[
+		"vertexattributes",[
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","N",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"normal"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[-0.612372994,-0.500000358,-0.612371624],[-0.612372994,-0.500000358,-0.612371624],[-0.612372994,-0.500000358,-0.612371624]
+						]
+					]
+				]
+			]
+		],
+		"pointattributes",[
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","P",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"point"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[0.851390004,0.596862018,-1.33872998],[-0.895377994,0.577014029,0.42424801],[-0.248298004,-0.849215984,0.941681027]
+						]
+					]
+				]
+			],
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","Cd",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"color"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[1]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[1,0,0],[0,1,0],[0,0,1]
+						]
+					]
+				]
+			]
+		]
+	],
+	"primitives",[
+		[
+			[
+				"type","Polygon_run"
+			],
+			[
+				"startvertex",0,
+				"nprimitives",1,
+				"nvertices",[3]
+			]
+		]
+	]
+]
+ray_end	# }
+
+# Main image from /obj/cam1
+ray_time 0	# {
+    ray_property renderer rendertype "beauty"
+    ray_property renderer renderlabel "/obj/cam1.beauty"
+    ray_declare plane string IPlay.s3dleftplane ""
+    ray_declare plane string IPlay.s3drightplane ""
+    ray_image "ip"
+	ray_declare plane string IPlay.rendermode "append"
+	ray_declare plane string IPlay.framerange "1 1"
+	ray_declare plane float IPlay.currentframe 1
+	ray_declare plane string IPlay.rendersource "/obj/ropnet1/mantra1"
+	ray_declare plane int IPlay.houdiniportnum 16397
+	ray_start plane	# {
+	    ray_property plane variable "Cf+Af"
+	    ray_property plane vextype "vector4"
+	    ray_property plane channel "C"
+	ray_end	# }
+    
+    ray_property renderer colorspace "gamma"
+    ray_property renderer logcolors 0
+    ray_property renderer renderengine "raytrace"
+    ray_property renderer verbose 0
+    ray_property image samples 3 3
+    ray_property renderer pbrshader pathtracer use_renderstate 0
+    ray_property image resolution 1280 720
+    ray_property image pixelaspect 1
+    ray_property camera clip 0.100000001490116119 3827.68791932216527
+    ray_property camera projection "perspective"
+    ray_property object velocityscale 0.0208333333333333322
+    ray_transform 0.707106781186547462 -0.353553390593273731 0.61237243569579447 0 0 0.866025403784438708 0.499999999999999889 0 -0.707106781186547573 -0.353553390593273564 0.612372435695794692 0 0 -2.13936859664431641e-16 -4.45015103370047793 1
+    ray_start segment	# {
+	ray_property camera orthowidth 2.85820159377695449
+	ray_property camera zoom 1.20710555938823605
+	ray_property image window 0 1 0 1
+    ray_end	# }
+    ray_start light	# {
+	ray_transform 0.707106781186547462 0 -0.707106781186547573 0 -0.353553390593273675 0.866025403784438708 -0.35355339059327362 0 0.612372435695794581 0.499999999999999833 0.61237243569579447 0 2.72514982772131953 2.22507551685023852 2.72514982772131953 1
+	ray_property object name "soho_autoheadlight_light"
+	ray_property light projection "perspective"
+	ray_property light zoom 1.20710550584963339 1.20710550584963339
+    ray_end	# }
+
+    ray_start object	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_geometry /obj/triangle/attribwrangle1
+	ray_property object name "/obj/triangle"
+    ray_end	# }
+    ray_raytrace
+# Generation time: 0.02 seconds
+ray_quit	# }

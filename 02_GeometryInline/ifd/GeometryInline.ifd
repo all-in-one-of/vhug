@@ -1,0 +1,86 @@
+# IFD created by Houdini Version: 17.0.459
+# Generation Time: Feb 12, 2019 at 21:43:25
+#   Render Target: mantra17.0
+#        HIP File: C:/Users/bareya/Desktop/VHUG/02_GeometryInline/GeometryInline, $T=0, $FPS=24
+#   Output driver: /obj/GeometryInline/GeometryInline
+ray_version VEX17.0.459
+ray_defaults 'RenderProperties.json'
+
+ray_declare global float global:fps 24
+fps 24; tcur 0
+
+setenv HIP = "$HIP_OVERRIDE"
+if "$HIP" == "" then	# {
+    setenv HIP = "C:/Users/bareya/Desktop/VHUG/02_GeometryInline"
+endif	# }
+if "$_TMP_SHARED_STORAGE" == "" then	# {
+    setenv _TMP_SHARED_STORAGE = "C:/Users/bareya/Desktop/VHUG/02_GeometryInline/ifds/storage"
+endif	# }
+if "$_TMP_LOCAL_STORAGE" == "" then	# {
+    setenv _TMP_LOCAL_STORAGE = "C:/Users/bareya/AppData/Local/Temp/houdini_temp/ifds/storage"
+endif	# }
+# Retained geometry
+# Save geometry for /obj/Sphere/sphere1 at time 0
+ray_start geo	# {
+    ray_detail /obj/Sphere/sphere1 $_TMP_SHARED_STORAGE/GeometryInline.1_000_1065.bgeo.sc
+ray_end	# }
+
+# Main image from /obj/cam1
+ray_time 0	# {
+    ray_property renderer rendertype "beauty"
+    ray_property renderer renderlabel "/obj/cam1.beauty"
+    ray_declare plane string IPlay.s3dleftplane ""
+    ray_declare plane string IPlay.s3drightplane ""
+    ray_image "ip"
+	ray_declare plane string IPlay.rendermode "append"
+	ray_declare plane string IPlay.framerange "1 1"
+	ray_declare plane float IPlay.currentframe 1
+	ray_declare plane string IPlay.rendersource "/obj/GeometryInline/GeometryInline"
+	ray_declare plane int IPlay.houdiniportnum 16397
+	ray_start plane	# {
+	    ray_property plane variable "Cf+Af"
+	    ray_property plane vextype "vector4"
+	    ray_property plane channel "C"
+	ray_end	# }
+    
+    ray_property renderer colorspace "gamma"
+    ray_property renderer logcolors 0
+    ray_property renderer renderengine "pbrraytrace"
+    ray_property renderer verbose 0
+    ray_property image samples 3 3
+    ray_property renderer pbrshader pathtracer use_renderstate 0
+    ray_property image resolution 1280 720
+    ray_property image pixelaspect 1
+    ray_property camera clip 0.100000001490116119 5879.78904269082705
+    ray_property camera projection "perspective"
+    ray_property object velocityscale 0.0208333333333333322
+    ray_transform 0.986181465919622857 -0.0909534019425748824 0.138468750812940439 0 -4.64038529823795898e-17 0.835817239847243654 0.5490077791563025 0 -0.165668694316771226 -0.541421296449638989 0.824267470833447757 0 -0.0328996984516034333 0.00303429275661299324 -6.23632231025055361 1
+    ray_start segment	# {
+	ray_property camera orthowidth 3.62389860805478747
+	ray_property camera zoom 1.20710555938823605
+	ray_property image window 0 1 0 1
+    ray_end	# }
+    ray_start light	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_property object name "/obj/envlight1"
+	ray_property object surface opdef:/Shop/v_arealight alpha 1 lightcolor 1 1 1
+	ray_property light areafullsphere 1
+	ray_property light areamap ""
+	ray_property light areashape "env"
+	ray_property light envintensity 1 1 1
+	ray_property light raybackground 0
+	ray_property light shader opdef:/Shop/v_asadlight lightcolor 1 1 1 doatten 2
+	ray_property light shadow opdef:/Shop/v_rayshadow shadowtype filter shadowI 1
+	ray_property light illumshader mislighting misbias -1.000000 filteramount 0.000000
+	ray_property light projection "perspective"
+	ray_property light zoom 1.20710550584963339 1.20710550584963339
+    ray_end	# }
+
+    ray_start object	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_geometry /obj/Sphere/sphere1
+	ray_property object name "/obj/Sphere"
+    ray_end	# }
+    ray_raytrace
+# Generation time: 0.03 seconds
+ray_quit	# }

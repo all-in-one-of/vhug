@@ -1,0 +1,315 @@
+# IFD created by Houdini Version: 17.0.459
+# Generation Time: Feb 12, 2019 at 22:43:29
+#   Render Target: mantra17.0
+#        HIP File: C:/Users/bareya/Desktop/VHUG/04_HoudiniEngine/HoudiniEngine, $T=0, $FPS=24
+#   Output driver: /obj/ropnet1/mantra1
+ray_version VEX17.0.459
+ray_defaults 'RenderProperties.json'
+
+ray_declare global float global:fps 24
+fps 24; tcur 0
+
+setenv HIP = "$HIP_OVERRIDE"
+if "$HIP" == "" then	# {
+    setenv HIP = "C:/Users/bareya/Desktop/VHUG/04_HoudiniEngine"
+endif	# }
+if "$_TMP_SHARED_STORAGE" == "" then	# {
+    setenv _TMP_SHARED_STORAGE = "C:/Users/bareya/Desktop/VHUG/04_HoudiniEngine/ifds/storage"
+endif	# }
+if "$_TMP_LOCAL_STORAGE" == "" then	# {
+    setenv _TMP_LOCAL_STORAGE = "C:/Users/bareya/AppData/Local/Temp/houdini_temp/ifds/storage"
+endif	# }
+# OTLs loaded into the .hip file
+ray_loadotl "$HIP/otls/pointGenerator.hda"
+# Retained geometry
+# Save geometry for /obj/pointgenerator1/Display/subnet1 at time 0
+ray_start geo	# {
+    ray_detail /obj/pointgenerator1/Display/subnet1 stdin
+[
+	"fileversion","17.0.459",
+	"hasindex",false,
+	"pointcount",50,
+	"vertexcount",0,
+	"primitivecount",0,
+	"topology",[
+		"pointref",[
+			"indices",[]
+		]
+	],
+	"attributes",[
+		"pointattributes",[
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","P",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"point"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[-0.416268915,0.160307184,1.50502372],[-0.357945383,0.505468428,0.655900419],[-0.704556704,-0.433280885,1.74857187],[0.484533936,0.109054804,-1.09590614],[0.0147805363,0.608945549,-1.22531593],[1.09029233,-0.256338,0.393802285],[0.0062418771,-0.21271202,0.596235216],[0.0452141427,0.168867111,1.0284133],[0.455180973,-0.817743957,1.51077163],[0.693430364,-0.185469836,-1.27038288],[0.153478086,0.395149499,-0.351993382],[1.11888182,-0.316434473,-0.500666499],[-0.731331408,-0.0988751873,2.48132968],[-0.0564791188,0.132085502,2.61633587],[-0.530828834,0.411163896,-0.466663271],[-0.513810933,-0.12129508,1.20979559],[0.201028213,0.924925685,0.371264547],[-0.236809239,-0.133690849,0.773869872],[-0.232502788,0.295746148,-2.40374708],[0.178757921,-0.457170904,1.15366876],[-0.360336483,0.131085813,0.824084222],[1.02984703,0.221304387,0.381414294],[-0.371998221,0.280798763,-0.076145716],[-0.414888889,0.246019349,0.552761018],[-0.308919877,0.567906499,0.277450353],[-0.0576942936,-1.23423278,1.62052238],[-0.622703254,-0.937066555,1.67614841],[0.518405795,0.145913422,0.0559457242],[-0.453135818,0.336929262,-1.91853154],[0.253205568,0.354555547,-1.64263809],[-0.275810033,0.977165043,0.421824366],[-0.822466075,-0.187998921,-1.27310526],[-0.232697204,0.850982726,-0.305989742],[0.472103477,0.0103867883,2.16377401],[1.21394682,-0.107466809,0.234093904],[0.0380903482,0.0358505659,0.00243306812],[0.419446975,-0.178234577,1.48814142],[0.839205325,0.338857532,0.196936056],[-0.546178341,0.0573961474,1.98044956],[-0.0734457299,-0.0712530464,-0.984559417],[0.270385206,0.317682475,-2.15276766],[-0.301648527,0.0195087623,0.374079883],[-1.22994673,0.238599047,0.341259271],[0.1448365,-0.109265946,-0.610814273],[0.223613665,0.0472858362,0.566602707],[-0.0140477968,0.759108484,-0.649097621],[-1.0845921,-0.567559421,0.138964728],[0.340190113,0.651707232,0.40979743],[0.226110965,0.467068285,0.623390615],[1.01305234,-0.552733243,0.148770496]
+						]
+					]
+				]
+			],
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","Cd",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"color"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[1]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[0.417231798,0.62565434,0.156741619],[0.00292515755,0.864668012,0.388919353],[0.813432217,0.127211928,0.3018682],[0.262380481,0.736549616,0.116141438],[0.0022482872,0.197055221,0.207877874],[0.189493775,0.993246078,0.795602679],[0.116196513,0.867896318,0.986246228],[0.617775917,0.325135112,0.388785601],[0.916211128,0.195027232,0.57043004],[0.519916773,0.333117604,0.447025776],[0.0936818123,0.585398078,0.602526426],[0.119826913,0.758963585,0.727957606],[0.974494576,0.451674461,0.29960525],[0.922370076,0.917854786,0.104334235],[0.149107695,0.352199197,0.234881401],[0.0862303972,0.518742085,0.0350097418],[0.80475235,0.271942019,0.156748056],[0.869107842,0.598248482,0.420887828],[0.876262426,0.582066178,0.572273254],[0.0249513388,0.993964911,0.309464097],[0.748144746,0.499849319,0.555272937],[0.374562502,0.515289426,0.998364925],[0.16958499,0.321529031,0.976794243],[0.355336428,0.234100461,0.936658382],[0.672350168,0.530572057,0.319597721],[0.942506075,0.791134,0.187860012],[0.600252032,0.380832911,0.767214894],[0.391067982,0.299074531,0.899851561],[0.855068207,0.27370441,0.699190378],[0.0525585413,0.872756004,0.054915309],[0.992913604,0.383138418,0.342352509],[0.722306013,0.283269525,0.0721940994],[0.950171232,0.637118936,0.263056755],[0.930239558,0.867448092,0.901317716],[0.572112799,0.923042893,0.838954926],[0.995248199,0.37442565,0.721274018],[0.217380881,0.778263807,0.430642724],[0.938194156,0.493807077,0.0923243761],[0.337844372,0.269765258,0.882600546],[0.994804502,0.829717159,0.821338058],[0.281177759,0.276385427,0.318882465],[0.212849021,0.383412123,0.930383325],[0.796452761,0.39830029,0.657193661],[0.343128085,0.142713785,0.530064702],[0.582494974,0.313626409,0.86453867],[0.862383842,0.33218658,0.733384371],[0.814106822,0.0247147083,0.116682172],[0.164659739,0.118096471,0.394915104],[0.649416685,0.174575448,0.0644445419],[0.391641617,0.129041553,0.757049799]
+						]
+					]
+				]
+			],
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","pscale",
+					"options",{
+					}
+				],
+				[
+					"size",1,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",1,
+						"storage","fpreal32",
+						"arrays",[[0.00834463537,5.85031485e-05,0.0162686445,0.00524760969,4.49657418e-05,0.00378987542,0.00232393015,0.0123555185,0.0183242224,0.0103983348,0.00187363615,0.00239653816,0.0194898918,0.018447401,0.00298215379,0.00172460789,0.016095046,0.0173821561,0.0175252482,0.000499026792,0.0149628948,0.00749125006,0.00339169963,0.00710672839,0.0134470034,0.0188501216,0.0120050404,0.00782135967,0.0171013642,0.00105117075,0.0198582709,0.0144461198,0.0190034248,0.0186047908,0.0114422562,0.0199049637,0.00434761774,0.018763883,0.00675688731,0.01989609,0.00562355528,0.00425698049,0.0159290545,0.00686256168,0.0116498992,0.0172476768,0.0162821356,0.00329319481,0.0129883336,0.0078328317]
+						]
+					]
+				]
+			]
+		]
+	],
+	"primitives",[
+	]
+]
+ray_end	# }
+# Save geometry for /obj/pointgenerator1/Render/attribwrangle_parameters at time 0
+ray_start geo	# {
+    ray_detail /obj/pointgenerator1/Render/attribwrangle_parameters stdin
+[
+	"fileversion","17.0.459",
+	"hasindex",false,
+	"pointcount",1,
+	"vertexcount",0,
+	"primitivecount",0,
+	"topology",[
+		"pointref",[
+			"indices",[]
+		]
+	],
+	"attributes",[
+		"pointattributes",[
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","P",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"point"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[-0.0693135262,-0.220241964,0.0245233774]
+						]
+					]
+				]
+			],
+			[
+				[
+					"scope","public",
+					"type","string",
+					"name","geometry",
+					"options",{
+					}
+				],
+				[
+					"size",1,
+					"storage","int32",
+					"strings",["C:/Users/bareya/Desktop/VHUG/04_HoudiniEngine/geo/sqab.bgeo"
+					],
+					"indices",[
+						"size",1,
+						"storage","int32",
+						"arrays",[[0]
+						]
+					]
+				]
+			],
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","points",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"nonarithmetic_integer"
+						}
+					}
+				],
+				[
+					"size",1,
+					"storage","int32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",1,
+						"storage","int32",
+						"arrays",[[10000]
+						]
+					]
+				]
+			],
+			[
+				[
+					"scope","public",
+					"type","string",
+					"name","vexexpression",
+					"options",{
+					}
+				],
+				[
+					"size",1,
+					"storage","int32",
+					"strings",["v@Cd = rand(i@ptnum);f@pscale = 0.02*rand(i@ptnum);"
+					],
+					"indices",[
+						"size",1,
+						"storage","int32",
+						"arrays",[[0]
+						]
+					]
+				]
+			]
+		]
+	],
+	"primitives",[
+	]
+]
+ray_end	# }
+
+# Main image from /obj/cam1
+ray_time 0	# {
+    ray_property renderer rendertype "beauty"
+    ray_property renderer renderlabel "/obj/cam1.beauty"
+    ray_declare plane string IPlay.s3dleftplane ""
+    ray_declare plane string IPlay.s3drightplane ""
+    ray_image "C:/Users/bareya/Desktop/VHUG/04_HoudiniEngine/render/HoudiniEngine.mantra1.0001.exr"
+	ray_declare plane string IPlay.rendermode "append"
+	ray_declare plane string IPlay.framerange "1 1"
+	ray_declare plane float IPlay.currentframe 1
+	ray_declare plane string IPlay.rendersource "/obj/ropnet1/mantra1"
+	ray_declare plane int IPlay.houdiniportnum 14633
+	ray_start plane	# {
+	    ray_property plane variable "Cf+Af"
+	    ray_property plane vextype "vector4"
+	    ray_property plane channel "C"
+	ray_end	# }
+    
+    ray_property renderer colorspace "gamma"
+    ray_property renderer logcolors 0
+    ray_property renderer renderengine "raytrace"
+    ray_property renderer verbose 0
+    ray_property image samples 6 6
+    ray_property renderer pbrshader pathtracer use_renderstate 0
+    ray_property image resolution 1920 1080
+    ray_property image pixelaspect 1
+    ray_property camera clip 0.100000001490116119 16749.8051869549672
+    ray_property camera projection "perspective"
+    ray_property object velocityscale 0.0208333333333333322
+    ray_transform 0.707106765732237186 -0.353553407242979123 0.612372443928182797 0 1.45716771982051796e-16 0.866025396499207067 0.500000012618391221 0 -0.707106796640857405 -0.353553391788668403 0.612372417160532478 0 0.372661840282035417 0.223364939702017984 -9.44313616047995552 1
+    ray_start segment	# {
+	ray_property camera orthowidth 8.66665055534594408
+	ray_property camera zoom 1.20710555938823605
+	ray_property image window 0 1 0 1
+    ray_end	# }
+    ray_start light	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_property object name "/obj/envlight1"
+	ray_property object surface opdef:/Shop/v_arealight alpha 1 lightcolor 1 1 1
+	ray_property light areafullsphere 1
+	ray_property light areamap ""
+	ray_property light areashape "env"
+	ray_property light envintensity 1 1 1
+	ray_property light raybackground 0
+	ray_property light shader opdef:/Shop/v_asadlight lightcolor 1 1 1 doatten 2
+	ray_property light shadow opdef:/Shop/v_rayshadow shadowtype filter shadowI 1
+	ray_property light illumshader mislighting misbias -1.000000 filteramount 0.000000
+	ray_property light projection "perspective"
+	ray_property light zoom 1.20710550584963339 1.20710550584963339
+    ray_end	# }
+
+    ray_start object	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_geometry /obj/pointgenerator1/Display/subnet1
+	ray_property object name "/obj/pointgenerator1/Display"
+	ray_property object rendervisibility ""
+    ray_end	# }
+    ray_start object	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_procedural enginepointgen opname "pointgenerator" otllist "C:/Users/bareya/Desktop/VHUG/04_HoudiniEngine/otls/pointGenerator.hda" size 8 8 8
+
+	ray_declare object vector2 camera:shutter 0 0
+	ray_geometry /obj/pointgenerator1/Render/attribwrangle_parameters
+	ray_property object name "/obj/pointgenerator1/Render"
+    ray_end	# }
+    ray_raytrace
+# Generation time: 0.04 seconds
+ray_quit	# }

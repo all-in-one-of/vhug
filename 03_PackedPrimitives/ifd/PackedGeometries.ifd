@@ -1,0 +1,370 @@
+# IFD created by Houdini Version: 17.0.459
+# Generation Time: Feb 12, 2019 at 21:09:45
+#   Render Target: mantra17.0
+#        HIP File: C:/Users/bareya/Desktop/VHUG/PackedPrimitives/PackedPrimitivesHeavy, $T=0, $FPS=24
+#   Output driver: /obj/PackedPrimitives/PackedGeometries
+ray_version VEX17.0.459
+ray_defaults 'RenderProperties.json'
+
+ray_declare global float global:fps 24
+fps 24; tcur 0
+
+setenv HIP = "$HIP_OVERRIDE"
+if "$HIP" == "" then	# {
+    setenv HIP = "C:/Users/bareya/Desktop/VHUG/PackedPrimitives"
+endif	# }
+if "$_TMP_SHARED_STORAGE" == "" then	# {
+    setenv _TMP_SHARED_STORAGE = "C:/Users/bareya/Desktop/VHUG/PackedPrimitives/ifds/storage"
+endif	# }
+if "$_TMP_LOCAL_STORAGE" == "" then	# {
+    setenv _TMP_LOCAL_STORAGE = "C:/Users/bareya/AppData/Local/Temp/houdini_temp/ifds/storage"
+endif	# }
+# Retained geometry
+# Save geometry for /obj/PackedGeometries/blast1 at time 0
+ray_start geo	# {
+    ray_detail /obj/PackedGeometries/blast1 stdin
+[
+	"fileversion","17.0.459",
+	"hasindex",false,
+	"pointcount",1,
+	"vertexcount",1,
+	"primitivecount",1,
+	"topology",[
+		"pointref",[
+			"indices",[0]
+		]
+	],
+	"attributes",[
+		"vertexattributes",[
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","N",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"normal"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[0,0,0]
+						]
+					]
+				]
+			]
+		],
+		"pointattributes",[
+			[
+				[
+					"scope","public",
+					"type","numeric",
+					"name","P",
+					"options",{
+						"type":{
+							"type":"string",
+							"value":"point"
+						}
+					}
+				],
+				[
+					"size",3,
+					"storage","fpreal32",
+					"defaults",[
+						"size",1,
+						"storage","fpreal64",
+						"values",[0]
+					],
+					"values",[
+						"size",3,
+						"storage","fpreal32",
+						"tuples",[[0.901333094,0,2.98023224e-08]
+						]
+					]
+				]
+			]
+		],
+		"primitiveattributes",[
+			[
+				[
+					"scope","public",
+					"type","string",
+					"name","path",
+					"options",{
+					}
+				],
+				[
+					"size",1,
+					"storage","int32",
+					"strings",["op:/obj/PackedGeometries/pack_geometries/piece1"
+					],
+					"indices",[
+						"size",1,
+						"storage","int32",
+						"arrays",[[0]
+						]
+					]
+				]
+			]
+		]
+	],
+	"primitives",[
+		[
+			[
+				"type","PackedGeometry"
+			],
+			[
+				"parameters",{
+					"cachedbounds":[0.233833134174346924,1.5688331127166748,-0.889999985694885254,0.889999985694885254,-0.77076256275177002,0.770762622356414795],
+					"embedded":"embed:000000001f9df200",
+					"pointinstancetransform":false
+				},
+				"pivot",[0.901333094,0,2.98023224e-08],
+				"transform",[1,0,0,0,1,0,0,0,1],
+				"vertex",0,
+				"viewportlod","full"
+			]
+		]
+	],
+	"sharedprimitivedata",["PackedGeometry",
+		["gu:embeddedgeo","embed:000000001f9df200",
+			[
+				"fileversion","17.0.459",
+				"hasindex",false,
+				"pointcount",5,
+				"vertexcount",18,
+				"primitivecount",6,
+				"topology",[
+					"pointref",[
+						"indices",[0,3,2,0,4,3,0,2,4,2,3,1,3,4,1,4,2,1]
+					]
+				],
+				"attributes",[
+					"vertexattributes",[
+						[
+							[
+								"scope","public",
+								"type","numeric",
+								"name","N",
+								"options",{
+									"type":{
+										"type":"string",
+										"value":"normal"
+									}
+								}
+							],
+							[
+								"size",3,
+								"storage","fpreal32",
+								"defaults",[
+									"size",1,
+									"storage","fpreal64",
+									"values",[0]
+								],
+								"values",[
+									"size",3,
+									"storage","fpreal32",
+									"tuples",[[0.44721356,0.447213531,-0.774596632],[0.49999997,0,-0.866025448],[0.49999997,0,-0.866025448],[-0.89442718,0.44721359,7.77167273e-08],[-1,0,9.17775012e-08],[-1,0,9.17775012e-08],[0.44721365,0.44721365,0.774596632],[0.50000006,3.33200099e-08,0.866025388],[0.50000006,3.33200099e-08,0.866025388],[0.49999997,0,-0.866025448],[0.49999997,0,-0.866025448],[0.44721356,-0.447213531,-0.774596751],[-1,0,9.17775012e-08],[-1,0,9.17775012e-08],[-0.89442718,-0.44721359,8.64598562e-08],[0.50000006,3.33200099e-08,0.866025388],[0.50000006,3.33200099e-08,0.866025388],[0.44721365,-0.44721359,0.774596632]
+									]
+								]
+							]
+						]
+					],
+					"pointattributes",[
+						[
+							[
+								"scope","public",
+								"type","numeric",
+								"name","P",
+								"options",{
+									"type":{
+										"type":"string",
+										"value":"point"
+									}
+								}
+							],
+							[
+								"size",3,
+								"storage","fpreal32",
+								"defaults",[
+									"size",1,
+									"storage","fpreal64",
+									"values",[0]
+								],
+								"values",[
+									"size",3,
+									"storage","fpreal32",
+									"tuples",[[0.678833187,0.889999986,-3.3691105e-08],[0.678833187,-0.889999986,-3.3691105e-08],[1.56883311,0,0],[0.233833134,0,-0.770762563],[0.233833283,0,0.770762622]
+									]
+								]
+							]
+						],
+						[
+							[
+								"scope","public",
+								"type","numeric",
+								"name","Cd",
+								"options",{
+									"type":{
+										"type":"string",
+										"value":"color"
+									}
+								}
+							],
+							[
+								"size",3,
+								"storage","fpreal32",
+								"defaults",[
+									"size",1,
+									"storage","fpreal64",
+									"values",[1]
+								],
+								"values",[
+									"size",3,
+									"storage","fpreal32",
+									"tuples",[[0,0,1],[0,0,1],[0,0,1],[0,0,1],[0,0,1]
+									]
+								]
+							]
+						]
+					],
+					"primitiveattributes",[
+						[
+							[
+								"scope","public",
+								"type","numeric",
+								"name","class",
+								"options",{
+									"type":{
+										"type":"string",
+										"value":"nonarithmetic_integer"
+									}
+								}
+							],
+							[
+								"size",1,
+								"storage","int32",
+								"defaults",[
+									"size",1,
+									"storage","int64",
+									"values",[0]
+								],
+								"values",[
+									"size",1,
+									"storage","int32",
+									"arrays",[[1,1,1,1,1,1]
+									]
+								]
+							]
+						],
+						[
+							[
+								"scope","public",
+								"type","string",
+								"name","name",
+								"options",{
+								}
+							],
+							[
+								"size",1,
+								"storage","int32",
+								"strings",["piece1"
+								],
+								"indices",[
+									"size",1,
+									"storage","int32",
+									"arrays",[[0,0,0,0,0,0]
+									]
+								]
+							]
+						]
+					]
+				],
+				"primitives",[
+					[
+						[
+							"type","Polygon_run"
+						],
+						[
+							"startvertex",0,
+							"nprimitives",6,
+							"nvertices_rle",[3,6]
+						]
+					]
+				]
+			]
+		]
+	]
+]
+ray_end	# }
+
+# Main image from /obj/cam1
+ray_time 0	# {
+    ray_property renderer rendertype "beauty"
+    ray_property renderer renderlabel "/obj/cam1.beauty"
+    ray_declare plane string IPlay.s3dleftplane ""
+    ray_declare plane string IPlay.s3drightplane ""
+    ray_image "ip"
+	ray_declare plane string IPlay.rendermode "append"
+	ray_declare plane string IPlay.framerange "1 1"
+	ray_declare plane float IPlay.currentframe 1
+	ray_declare plane string IPlay.rendersource "/obj/PackedPrimitives/PackedGeometries"
+	ray_declare plane int IPlay.houdiniportnum 16397
+	ray_start plane	# {
+	    ray_property plane variable "Cf+Af"
+	    ray_property plane vextype "vector4"
+	    ray_property plane channel "C"
+	ray_end	# }
+    
+    ray_property renderer colorspace "gamma"
+    ray_property renderer logcolors 0
+    ray_property renderer renderengine "pbrraytrace"
+    ray_property renderer verbose 0
+    ray_property image samples 3 3
+    ray_property renderer pbrshader pathtracer use_renderstate 0
+    ray_property image resolution 1280 720
+    ray_property image pixelaspect 1
+    ray_property camera clip 0.100000001490116119 5879.78904269082705
+    ray_property camera projection "perspective"
+    ray_property object velocityscale 0.0208333333333333322
+    ray_transform 0.986181465919622857 -0.0909534019425748824 0.138468750812940439 0 -4.64038529823795898e-17 0.835817239847243654 0.5490077791563025 0 -0.165668694316771226 -0.541421296449638989 0.824267470833447757 0 -0.0328996984516034333 0.00303429275661299324 -6.23632231025055361 1
+    ray_start segment	# {
+	ray_property camera orthowidth 3.62389860805478747
+	ray_property camera zoom 1.20710555938823605
+	ray_property image window 0 1 0 1
+    ray_end	# }
+    ray_start light	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_property object name "/obj/envlight1"
+	ray_property object surface opdef:/Shop/v_arealight alpha 1 lightcolor 1 1 1
+	ray_property light areafullsphere 1
+	ray_property light areamap ""
+	ray_property light areashape "env"
+	ray_property light envintensity 1 1 1
+	ray_property light raybackground 0
+	ray_property light shader opdef:/Shop/v_asadlight lightcolor 1 1 1 doatten 2
+	ray_property light shadow opdef:/Shop/v_rayshadow shadowtype filter shadowI 1
+	ray_property light illumshader mislighting misbias -1.000000 filteramount 0.000000
+	ray_property light projection "perspective"
+	ray_property light zoom 1.20710550584963339 1.20710550584963339
+    ray_end	# }
+
+    ray_start object	# {
+	ray_transform 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1
+	ray_geometry /obj/PackedGeometries/blast1
+	ray_property object name "/obj/PackedGeometries"
+    ray_end	# }
+    ray_raytrace
+# Generation time: 0.023 seconds
+ray_quit	# }
